@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer = "true"></script>
+    <title>Simple Responsive Page</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">L<span>o</span>g<span>o</span></a>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#imgEffect">Clip-path</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#comparison">Compare</a></li>
+            <li><a href="#wavy">Wavy</a></li>
+        </ul>
+        <div class="toggleMenu"></div>
+    </header>
+    <section id="home">
+        <div id="description">
+            <h2>There is simple example of responsive page</h2>
+            <p>A site designed with RWD adapts the layout to the viewing environment by using fluid, proportion-based grids, flexible images, and CSS3 media queries, an extension of the @media rule, in the following ways: <span id="dots">...</span> 
+                <div id="more">
+                    <ul>
+                        <li>1)The fluid grid concept calls for page element sizing to be in relative units like percentages;</li>
+                        <li>2)Flexible images are also sized in relative units, so as to prevent them from displaying outside their containing element;</li>
+                        <li>3)Media queries allow the page to use different CSS rules based on the width of the device the site is being displayed on;</li>
+                        <li>4)Responsive layouts automatically adjust and adapt to any device screen size.</li>
+                    </ul>
+                </div>
+            </p>
+        </div>
+        <img src="responsiveWebsite.jpg">
+    </section>
+    <h2 class="heading">Just some clip-path effect</h2>
+    <section id="imgEffect"></section>
+    <section id="about">
+        <div id = "description">
+            <p>  Responsive web design, originally defined by Ethan Marcotte, responds to the needs of the users and the devices they're using. The layout changes based on the size and capabilities of the device. For example, on a phone users would see content shown in a single column view; a tablet might show the same content in two columns.</p>
+        </div>
+        <img src="responsiveWebsite3.jpg">
+    </section>
+    <section id="comparison">
+        <h2>Border-comperison effect</h2>
+        <div id="CompContainer">
+            <div id ="compEffectWrapper"><figure>
+                <div id="layer"> </div>
+                </figure>
+            </div>
+            <div id="description">
+                <p>Here we can have a look on comparison-border effect to feel difference between responsive and non responsive examples. <br><span>Hover your pointer or click on image to see that</span> </p>
+            </div>
+        </div>
+    </section>
+    <section id="wavy">
+        <div id="box">
+            <div id="content">
+                <h2>Wavy div animation</h2>
+                <p>Media queries are simple filters that can be applied to CSS styles. 
+                    They make it easy to change styles based on the characteristics of
+                     the device rendering the content, including the display type, width,
+                      height, orientation, and even resolution.</p>
+            </div>
+        </div>
+    </section>
+    <svg>
+        <filter id="wavyFilter">
+            <feTurbulence x="0" y ="0" baseFrequency = "0.02" numOctaves="5" seed ="2">
+                <animate attributeName = "baseFrequency" dur="60s" values = "0.02;0.05;0.02" repeatCount="indefinite"/>
+            </feTurbulence>
+            <feDisplacementMap  in="SourceGraphic" scale="30"/>
+        </filter>  
+    </svg>
+
+</body>
+</html>
